@@ -8,7 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-//import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 public class Topic_01_Check_Environment {
     WebDriver driver;
@@ -37,6 +37,7 @@ public class Topic_01_Check_Environment {
     @Test
     public void TC_02_Logo() {
         Assert.assertTrue(driver.findElement(By.cssSelector("img.fb_logo")).isDisplayed());
+        //test
     }
 
     @Test
